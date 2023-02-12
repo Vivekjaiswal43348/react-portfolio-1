@@ -69,7 +69,7 @@ header{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (min-wdth: 768px){
     header{
         height: 68vh;
     }
@@ -81,5 +81,9 @@ header{
     }
     .header_socials, .scroll_down{
         display: none;
+    }
+    .me{
+        width: 20rem;
+        left: calc(50% - 10rem);
     }
 }
