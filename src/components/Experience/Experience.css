@@ -13,7 +13,7 @@
   padding: 1.5rem 4rem;
   border-radius: 1rem;
   border: 1px solid transparent;
-  transition: var(--tansition);
+  transition: var(--transition);
 }
 .experience_container > div:hover {
   border-color: var(--color-primary-varient);
