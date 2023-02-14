@@ -13,15 +13,15 @@ import Footer from './components/Footer/Footer';
 const App = () => {
   return (
     <>
-      <Header/>
-      <Nav/>
-      <About/>
-      {/* <Experience/>
-      <Services/>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      {/* <Services/>
       <Portfolio/>
       <Testimonials/>
       <Contact/>*/}
-      <Footer/> 
+      <Footer />
     </>
   )
 }
