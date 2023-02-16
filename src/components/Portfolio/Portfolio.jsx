@@ -1,6 +1,6 @@
 import React from "react";
 import "./Portfolio.css";
-import PortfolioImg1 from "./../../assets/portfolio1.jpg";
+import { PortfolisData } from "./PortfolioData";
 
 const Portfolio = () => {
   return (
@@ -8,94 +8,35 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio_container">
-        <article className="portfolio_items">
-          <div>
-            <img
-              src={PortfolioImg1}
-              alt="Portfolio img"
-              className="portfolio-img"
-            />
-          </div>
-          <h3>Crypto Currency Dashboard and Financial Visualisation</h3>
-          <div className="portfolio_items-cta">
-            <a href="https://github.com/" className="btn">
-              Github
-            </a>
-            <a
-              href="https://dribbble.com/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio_items">
-          <div>
-            <img
-              src={PortfolioImg1}
-              alt="Portfolio img"
-              className="portfolio-img"
-            />
-          </div>
-          <h3>Crypto Currency Dashboard and Financial Visualisation</h3>
-          <div className="portfolio_items-cta">
-            <a href="https://github.com/" className="btn">
-              Github
-            </a>
-            <a
-              href="https://dribbble.com/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio_items">
-          <div>
-            <img
-              src={PortfolioImg1}
-              alt="Portfolio img"
-              className="portfolio-img"
-            />
-          </div>
-          <h3>Crypto Currency Dashboard and Financial Visualisation</h3>
-          <div className="portfolio_items-cta">
-            <a href="https://github.com/" className="btn">
-              Github
-            </a>
-            <a
-              href="https://dribbble.com/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio_items">
-          <div>
-            <img
-              src={PortfolioImg1}
-              alt="Portfolio img"
-              className="portfolio-img"
-            />
-          </div>
-          <h3>Crypto Currency Dashboard and Financial Visualisation</h3>
-          <div className="portfolio_items-cta">
-            <a href="https://github.com/" className="btn">
-              Github
-            </a>
-            <a
-              href="https://dribbble.com/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
+        {PortfolisData.map(({media, title, github, demo, type}) => {
+          return (
+            <article className="portfolio_items">
+              <div>
+                {type === "image" && (
+                  <img
+                    src={media}
+                    alt="Portfolio img"
+                    className="portfolio-img"
+                  />
+                )}
+                {/* {type === "video" && (
+                  <video className="portfolio-vdo">
+                    <source src={media} type='video/mp4'/>
+                    </video>
+                )} */}
+              </div>
+              <h3>{title}</h3>
+              <div className="portfolio_items-cta">
+                <a href={github} className="btn" target="_blank">
+                  Github
+                </a>
+                <a href={demo} className="btn btn-primary" target="_blank">
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

@@ -15,7 +15,12 @@
     background: transparent;
     border-color: var(--color-primary-varient);
 }
-.portfolio_items img{
+.portfolio-img{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.portfolio-vdo{
+    width: 20rem;
     border-radius: 1.5rem;
     overflow: hidden;
 }
@@ -39,11 +44,8 @@
 @media screen and (max-width: 600px){
     .portfolio_container{
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
         justify-content: center;
         margin: auto;
     }
-    /* .portfolio_items{
-        width: 22rem;
-    } */
 }
