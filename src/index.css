@@ -22,7 +22,7 @@
     --container-width-md: 86%;
     --container-width-sm: 90%;
 
-    --tansition: all 400ms ease;
+    --transition: all 400ms ease;
 }
 
 html{
@@ -75,7 +75,7 @@ section > h2 {
 
 a {
     color: var(--color-primary);
-    transition: var(--tansition);
+    transition: var(--transition);
 }
 
 a:hover{
@@ -90,7 +90,7 @@ a:hover{
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid var(--color-primary);
-    transition:  var(--tansition);
+    transition:  var(--transition);
 }
 
 .btn:hover{
