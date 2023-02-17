@@ -22,6 +22,6 @@ export const testiMonialsData = [
     {
         avatar: Avatar4,
         name: 'Nana Ama',
-        review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea animi soluta incidunt laudantium deleniti id voluptate, aut pariatur.'
+        review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea animi soluta incidunt laudantium deleniti id voluptate, aut pariatur. Lorem ipsum dolor, sit amet. Lorem ipsum dolor, sit amet!'
     }
 ]
