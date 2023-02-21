@@ -14,9 +14,9 @@ const Services = () => {
             <h3>UI/UX Design</h3>
           </div>
           <ul className="service_list">
-            {serviceListData_1_3.map((desc) => {
+            {serviceListData_1_3.map((desc, index) => {
               return (
-                <li>
+                <li key={index}>
                   <BiCheck className="service_list-icon" />
                   <p>{desc.description}</p>
                 </li>
@@ -30,9 +30,9 @@ const Services = () => {
             <h3>Web Development</h3>
           </div>
           <ul className="service_list">
-            {serviceListData_2.map((desc) => {
+            {serviceListData_2.map((desc, index) => {
               return (
-                <li>
+                <li key={index}>
                   <BiCheck className="service_list-icon" />
                   <p>{desc.description}</p>
                 </li>
@@ -46,9 +46,9 @@ const Services = () => {
             <h3>Content Creation</h3>
           </div>
           <ul className="service_list">
-            {serviceListData_1_3.map((desc) => {
+            {serviceListData_1_3.map((desc, index) => {
               return (
-                <li>
+                <li key={index}>
                   <BiCheck className="service_list-icon" />
                   <p>{desc.description}</p>
                 </li>
