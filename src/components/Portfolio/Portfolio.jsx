@@ -4,13 +4,13 @@ import { PortfolisData } from "./PortfolioData";
 
 const Portfolio = () => {
   return (
-    <section>
+    <section id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio_container">
-        {PortfolisData.map(({media, title, github, demo, type}) => {
+        {PortfolisData.map(({ media, title, github, demo, type, id }) => {
           return (
-            <article className="portfolio_items">
+            <article className="portfolio_items" key={id}>
               <div>
                 {type === "image" && (
                   <img
