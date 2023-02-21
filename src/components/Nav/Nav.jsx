@@ -7,10 +7,10 @@ import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
 const Nav = () => {
-  const [activeTab, setActiveTab] = useState("");
+  // const [activeTab, setActiveTab] = useState("");
   return (
     <nav>
-      <a href="#" className={activeTab === "" ? "active" : ""} onClick={()=> setActiveTab('')} title='Header'>
+      {/* <a href="#" className={activeTab === "" ? "active" : ""} onClick={()=> setActiveTab('')} title='Header'>
         <AiOutlineHome />
       </a>
       <a href="#about" className={activeTab === "about" ? "active" : ""} onClick={()=> setActiveTab('about')} title='About'>
@@ -22,8 +22,42 @@ const Nav = () => {
       <a href="#services" className={activeTab === "services" ? "active" : ""} onClick={()=> setActiveTab('services')} title='Services'>
         <RiServiceLine />
       </a>
-      {/* <a href="#portfolio">portfolio</a> */}
       <a href="#contact" className={activeTab === "contact" ? "active" : ""} onClick={()=> setActiveTab('contact')} title='Contact'>
+        <BiMessageSquareDetail />
+      </a> */}
+      <a
+        href="#"
+        className="header"
+        title="Header"
+      >
+        <AiOutlineHome />
+      </a>
+      <a
+        href="#about"
+        className="about"
+        title="About"
+      >
+        <AiOutlineUser />
+      </a>
+      <a
+        href="#experience"
+        className="experience"
+        title="Experience"
+      >
+        <BiBook />
+      </a>
+      <a
+        href="#services"
+        className="services"
+        title="Services"
+      >
+        <RiServiceLine />
+      </a>
+      <a
+        href="#contact"
+        className="contact"
+        title="Contact"
+      >
         <BiMessageSquareDetail />
       </a>
     </nav>
