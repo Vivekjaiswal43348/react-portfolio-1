@@ -37,6 +37,6 @@ nav a.active {
 
 @media screen and (max-width: 600px) {
   nav a {
-    padding: 0.5rem;
+    padding: 0.4rem;
   }
 }
